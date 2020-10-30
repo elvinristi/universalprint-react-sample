@@ -12,15 +12,6 @@ import * as msal from '@azure/msal-browser';
 const loginRequestScopes = {
     scopes: ['User.Read'] // optional Array<string>
 } as msal.SilentRequest;
-/**
- * Add here the scopes to request when obtaining an access token for MS Graph API. For more information, see:
- * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/resources-and-scopes.md
- */
-const tokenRequest = {
-    // PrintJob.ReadWrite.All user.read openid profile offline_access
-    scopes: ['User.Read', 'Printer.ReadWrite.All', 'PrintJob.ReadWrite.All', 'offline_access'],
-    forceRefresh: false // Set this to "true" to skip a cached token and go to the server to get a new token
-};
 
 const msalConfig = {
     auth: {
