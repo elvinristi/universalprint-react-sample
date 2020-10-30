@@ -16,6 +16,9 @@ Before using this sample, you need to onboard to [`universal print](https://docs
 2. Run `npm run build` to build the sample.
 3. Run `npm start`. This will launch the sample application in your browser (if not, navigate to http://localhost:3000).
 
+Due CORS error you can use temporarily, when testing with Chrome, following chrome extension to allow CORS:
+- https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc?hl=en-US
+
 ## Additional  Information
 This sample has dependency on [`@azure/msal-browser`](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) and [`@fluentui/react`](https://github.com/microsoft/fluentui) packages. 
 
